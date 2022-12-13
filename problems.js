@@ -130,13 +130,13 @@ function countConsonants(word) {
     The `.join('')` function joins the elements in an array into a string.
 */
 function alternatingLetters(str) {
-    let arr = str.split();
+    let arr = str.split('');
 
-    for (i = 0; i < arr.length; i++) {
-        if (str.indexOf(i) % 2 === 0) {
-            str.toUpperCase(i);
-        } else str.toLowerCase(i);
-    } return arr.join();
+     for (i = 0; i < arr.length; i ++) {
+         if (i % 2 === 0 || i === 0) {
+            arr[i] = arr[i].toLowerCase();
+         } else arr[i] = arr[i].toUpperCase();
+        } return arr.join('');
 };
 
 
